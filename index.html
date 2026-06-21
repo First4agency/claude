@@ -22,337 +22,365 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav" id="nav">
-    <div class="nav__inner container">
-      <a href="#" class="nav__logo" aria-label="AI Earners home">
-        <span class="logo-mark">
-          <span class="logo-a">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-              <polyline points="2,26 14,4 26,26" stroke="#00f0ff" stroke-width="3" stroke-linejoin="round" fill="none"/>
-              <polyline points="7,26 14,12 21,26" stroke="#ff2e7e" stroke-width="1.5" stroke-linejoin="round" fill="none" opacity="0.5"/>
-              <line x1="5" y1="20" x2="23" y2="20" stroke="#00f0ff" stroke-width="2"/>
-              <polygon points="22,10 26,6 26,14" fill="#ffb020"/>
-              <text x="18" y="27" font-family="Inter,sans-serif" font-size="9" font-weight="900" fill="#07060c">$</text>
-            </svg>
-          </span>
-          <span class="logo-wordmark">
-            <span class="logo-ai">AI</span><span class="logo-earners"> Earners</span>
-          </span>
-          <span class="logo-toolkit">TOOLKIT<span class="logo-dot">.</span></span>
-        </span>
+<!-- ═══ NAV ═══ -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#" class="logo" aria-label="AI Earners home">
+      <div class="logo__icon">AI</div>
+      <div class="logo__text">
+        <span class="logo__name"><span>AI</span> Earners</span>
+        <span class="logo__sub">TOOLKIT<em>.</em></span>
+      </div>
+    </a>
+
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__links" id="nav-links">
+      <a href="#framework" class="nav__link">Why this works</a>
+      <a href="#steps"     class="nav__link">How it works</a>
+      <a href="#toolkit"   class="nav__link">Toolkit</a>
+      <a href="#earnings"  class="nav__link">Earnings</a>
+      <a href="#join" class="btn btn-cyan btn-sm nav__cta">Join free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="hero__glow-1" aria-hidden="true"></div>
+  <div class="hero__glow-2" aria-hidden="true"></div>
+  <div class="hero__inner container">
+
+    <div class="hero__copy">
+      <span class="eyebrow">Free Skool Community &nbsp;·&nbsp; No Credit Card</span>
+
+      <h1 class="hero__headline">
+        No leads.<br>
+        No customers.<br>
+        <span class="glitch" data-text="No business.">No business.</span>
+      </h1>
+
+      <p class="hero__sub">
+        Every business lives or dies by leads and sales.
+        <strong>AI Earners</strong> teaches you to build AI-powered marketing assets —
+        <span class="pill pill-c">quiz funnels</span>,
+        <span class="pill pill-m">lead calculators</span>,
+        <span class="pill pill-a">AI ad videos</span> — that local businesses
+        pay <strong>$500–$2,000</strong> per build plus
+        <strong>$300–$500/month</strong> retainers.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#join" class="btn btn-cyan btn-lg">Join AI Earners Free →</a>
+        <a href="#steps" class="hero__link">See how it works</a>
+      </div>
+
+      <div class="hero__stats">
+        <div>
+          <div class="hero__stat-val">150<sup>+</sup></div>
+          <div class="hero__stat-label">Curated AI tools</div>
+        </div>
+        <div>
+          <div class="hero__stat-val">$2k</div>
+          <div class="hero__stat-label">Avg build price</div>
+        </div>
+        <div>
+          <div class="hero__stat-val">0</div>
+          <div class="hero__stat-label">Experience needed</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="true">
+      <div class="orbit-scene">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="orbit-center">
+          <div class="orbit-ai">AI</div>
+          <div class="orbit-earners">Earners</div>
+          <div class="orbit-toolkit">TOOLKIT<span>.</span></div>
+        </div>
+        <div class="fcard fcard-1">
+          <div class="fcard-label">Lead Score</div>
+          <div class="fcard-value">94<sub>/100</sub></div>
+        </div>
+        <div class="fcard fcard-2">
+          <div class="fcard-label">Build Price</div>
+          <div class="fcard-value">$1,500</div>
+        </div>
+        <div class="fcard fcard-3">
+          <div class="fcard-label">Retainer</div>
+          <div class="fcard-value">$400<sub>/mo</sub></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span class="ticker__word">QUIZ FUNNELS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">LEAD CALCULATORS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">AI AD VIDEOS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">PROMPT ANALYZER</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">150+ AI TOOLS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">LOCAL BUSINESS</span>
+    <span class="ticker__dot"></span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker__word">QUIZ FUNNELS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">LEAD CALCULATORS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">AI AD VIDEOS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">PROMPT ANALYZER</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">150+ AI TOOLS</span>
+    <span class="ticker__dot"></span>
+    <span class="ticker__word">LOCAL BUSINESS</span>
+    <span class="ticker__dot"></span>
+  </div>
+</div>
+
+<!-- ═══ FRAMEWORK ═══ -->
+<section class="framework section" id="framework">
+  <div class="container">
+    <div class="framework__head">
+      <span class="section-label">Why it works</span>
+      <h2 class="framework__title">
+        AI Earners is built around<br>
+        <span class="script-cyan">tools</span>
+        <span class="framework__plus">+</span>
+        <span class="script-magenta">prompts</span>
+        <span class="framework__plus">+</span>
+        <span class="script-amber">paid outcomes</span>
+      </h2>
+    </div>
+
+    <div class="fw-cards">
+      <div class="fw-card fw-card-1">
+        <div class="fw-card__stripe"></div>
+        <div class="fw-card__icon">🧰</div>
+        <h3 class="fw-card__title">AI Trenders Toolkit</h3>
+        <p class="fw-card__body">150+ curated AI tools organised into Quick-Start Packs — no hunting, no tab overload. Grab the pack for your niche and build.</p>
+      </div>
+      <div class="fw-card fw-card-2">
+        <div class="fw-card__stripe"></div>
+        <div class="fw-card__icon">🔍</div>
+        <h3 class="fw-card__title">Prompt Analyzer</h3>
+        <p class="fw-card__body">Better prompts, better output, every single time. Break down what makes a prompt work and write ones that actually convert.</p>
+      </div>
+      <div class="fw-card fw-card-3">
+        <div class="fw-card__stripe"></div>
+        <div class="fw-card__icon">💰</div>
+        <h3 class="fw-card__title">Paid Outcomes</h3>
+        <p class="fw-card__body">We only teach assets businesses already pay for — quizzes, calculators, lead funnels, AI ad videos. Real niches, real money.</p>
+      </div>
+    </div>
+
+    <div class="fw-callout">
+      <p>
+        Most people trying to make money with AI go in circles because nobody tells them
+        <span class="pill pill-o">what businesses actually pay for</span>.
+        It's not apps. It's not chatbots. It's
+        <span class="pill pill-m">marketing assets</span> —
+        the things that generate
+        <span class="pill pill-c">leads and sales</span>
+        every single day.
+        <span class="script-amber"> That's the secret.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HOW IT WORKS ═══ -->
+<section class="steps section" id="steps">
+  <div class="container">
+    <div class="steps__head">
+      <span class="section-label">How it works</span>
+      <h2 class="steps__title">Four steps from zero to<br><span class="script-cyan">paid monthly</span></h2>
+    </div>
+    <div class="steps__grid">
+      <div class="step">
+        <div class="step__accent"></div>
+        <div class="step__num">01</div>
+        <h3 class="step__title">Pick a niche</h3>
+        <p class="step__body">Mortgage brokers, chiropractors, coaches, real estate — proven local business niches that need marketing assets <em>right now</em>.</p>
+      </div>
+      <div class="step">
+        <div class="step__accent"></div>
+        <div class="step__num">02</div>
+        <h3 class="step__title">Grab a pack</h3>
+        <p class="step__body">Select the right Quick-Start Pack from the AI Trenders Toolkit. Every tool you need, pre-curated and ready to go.</p>
+      </div>
+      <div class="step">
+        <div class="step__accent"></div>
+        <div class="step__num">03</div>
+        <h3 class="step__title">Build the asset</h3>
+        <p class="step__body">Use the Prompt Analyzer to get better outputs. Build a quiz funnel, lead calculator, or AI ad video in hours — not weeks.</p>
+      </div>
+      <div class="step">
+        <div class="step__accent"></div>
+        <div class="step__num">04</div>
+        <h3 class="step__title">Get paid monthly</h3>
+        <p class="step__body">Charge <span class="pill pill-c">$500–$2,000</span> for the build, then <span class="pill pill-m">$300–$500/mo</span> to maintain and optimise. Recurring revenue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TOOLKIT ═══ -->
+<section class="toolkit section" id="toolkit">
+  <div class="container">
+    <div class="toolkit__inner">
+      <div class="toolkit__left">
+        <span class="section-label">The AI Trenders Toolkit</span>
+        <h2 class="toolkit__title">150+ tools.<br>Organised into<br><span class="script-cyan">Quick-Start Packs.</span></h2>
+        <p class="toolkit__sub">No more tab overload or tool paralysis. Every pack is curated for a specific outcome — content, growth, solo operations, daily AI use. Pick one. Build something.</p>
+        <div class="toolkit__meta">
+          <span class="toolkit__tag"><strong>150+</strong> AI tools</span>
+          <span class="toolkit__tag"><strong>4</strong> Quick-Start Packs</span>
+          <span class="toolkit__tag"><strong>1</strong> Prompt Analyzer</span>
+        </div>
+        <a href="#join" class="btn btn-cyan btn-md">Get the full toolkit →</a>
+      </div>
+
+      <div class="toolkit__right">
+        <div class="packs">
+          <div class="pack">
+            <div class="pack__icon">🎬</div>
+            <div>
+              <div class="pack__name">Content Studio Pack</div>
+              <div class="pack__desc">AI video, copywriting, and creative tools for building ad assets fast.</div>
+            </div>
+          </div>
+          <div class="pack">
+            <div class="pack__icon">🧑‍💻</div>
+            <div>
+              <div class="pack__name">Solo Founder Pack</div>
+              <div class="pack__desc">Everything you need to run a one-person marketing agency with AI.</div>
+            </div>
+          </div>
+          <div class="pack">
+            <div class="pack__icon">📈</div>
+            <div>
+              <div class="pack__name">Growth Marketer Pack</div>
+              <div class="pack__desc">Lead gen, funnel building, and conversion tools for scaling client results.</div>
+            </div>
+          </div>
+          <div class="pack">
+            <div class="pack__icon">⚡</div>
+            <div>
+              <div class="pack__name">Daily Driver Pack</div>
+              <div class="pack__desc">The 10 AI tools you should be using every single day without exception.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EARNINGS ═══ -->
+<section class="earnings section" id="earnings">
+  <div class="container">
+    <div class="earnings__head">
+      <span class="section-label">What you can earn</span>
+      <h2 class="earnings__title">Real money for<br><span class="script-magenta">real marketing work</span></h2>
+    </div>
+    <div class="earnings__grid">
+      <div class="ecard ecard-featured">
+        <div class="ecard__chip">Per Build</div>
+        <div class="ecard__amount">$500–$2k</div>
+        <div class="ecard__period">One-time project fee</div>
+        <ul class="ecard__list">
+          <li>Quiz funnels for lead capture</li>
+          <li>AI-powered calculators</li>
+          <li>Lead generation assets</li>
+          <li>AI ad videos for social &amp; paid</li>
+        </ul>
+        <a href="#join" class="btn btn-magenta btn-md">Start building →</a>
+      </div>
+      <div class="ecard">
+        <div class="ecard__chip">Monthly Retainer</div>
+        <div class="ecard__amount">$300–$500</div>
+        <div class="ecard__period">Per month, per client</div>
+        <ul class="ecard__list">
+          <li>Ongoing optimisation</li>
+          <li>Monthly asset updates</li>
+          <li>Performance reporting</li>
+          <li>New asset builds</li>
+        </ul>
+        <a href="#join" class="btn btn-outline-cyan btn-md">Join to learn how →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-cta section" id="join">
+  <div class="container">
+    <div class="final-cta__inner">
+      <span class="eyebrow">Free forever on Skool · No credit card</span>
+      <h2 class="final-cta__title">
+        Stop going in circles.<br>
+        <span class="script-cyan">Join AI Earners free</span><br>
+        and get paid to build.
+      </h2>
+      <p class="final-cta__sub">
+        Access the full AI Trenders Toolkit (150+ tools), the Prompt Analyzer,
+        every Quick-Start Pack, and a community of people actually making money with AI.
+      </p>
+      <a href="https://skool.com" class="btn btn-cyan btn-xl">
+        Join AI Earners Free — No Credit Card →
       </a>
-      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav__links" id="nav-links">
-        <a href="#framework" class="nav__link">Why this works</a>
-        <a href="#steps" class="nav__link">How it works</a>
-        <a href="#toolkit" class="nav__link">Toolkit</a>
-        <a href="#earnings" class="nav__link">Earnings</a>
-        <a href="#join" class="nav__cta btn btn--cyan btn--sm">Join free</a>
+      <p class="final-cta__note">Free forever on Skool · Join thousands of AI builders</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="logo">
+          <div class="logo__icon">AI</div>
+          <div class="logo__text">
+            <span class="logo__name"><span>AI</span> Earners</span>
+            <span class="logo__sub">TOOLKIT<em>.</em></span>
+          </div>
+        </div>
+        <p class="footer__tagline">Build AI marketing assets. Get paid monthly.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#framework">Why this works</a>
+        <a href="#steps">How it works</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#earnings">Earnings</a>
+        <a href="#join">Join free</a>
       </nav>
     </div>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero__inner container">
-        <div class="hero__copy">
-          <span class="eyebrow">Free Skool Community · No Credit Card</span>
-          <h1 class="hero__headline">
-            No leads.<br>No customers.<br>
-            <span class="glitch" data-text="No business.">No business.</span>
-          </h1>
-          <p class="hero__sub">
-            Every business lives or dies by leads and sales.
-            <strong>AI Earners</strong> teaches you to build
-            <span class="pill pill--cyan">quiz funnels</span>,
-            <span class="pill pill--magenta">lead calculators</span>,
-            and <span class="pill pill--amber">AI ad videos</span>
-            that local businesses pay
-            <span class="pill pill--cyan">$500–$2,000</span> per build
-            plus <span class="pill pill--magenta">$300–$500/month</span> retainers.
-          </p>
-          <div class="hero__actions">
-            <a href="#join" class="btn btn--cyan btn--lg">Join AI Earners Free →</a>
-            <a href="#steps" class="hero__text-link">See how it works</a>
-          </div>
-          <div class="hero__stats">
-            <div class="hero__stat">
-              <span class="hero__stat-value">150<span class="stat-plus">+</span></span>
-              <span class="hero__stat-label">Curated AI tools</span>
-            </div>
-            <div class="hero__stat">
-              <span class="hero__stat-value">$2k</span>
-              <span class="hero__stat-label">Avg build price</span>
-            </div>
-            <div class="hero__stat">
-              <span class="hero__stat-value">0</span>
-              <span class="hero__stat-label">Experience needed</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__visual" aria-hidden="true">
-          <div class="orbit-wrap">
-            <div class="orbit orbit--outer"></div>
-            <div class="orbit orbit--inner"></div>
-            <div class="hero__logo-graphic">
-              <div class="logo-gfx-ai">AI</div>
-              <div class="logo-gfx-earners glitch-logo" data-text="Earners">Earners</div>
-              <div class="logo-gfx-toolkit">TOOLKIT<span>.</span></div>
-            </div>
-            <!-- Floating stat cards -->
-            <div class="float-card float-card--1">
-              <span class="float-card__label">Lead Score</span>
-              <span class="float-card__value">94<span>/100</span></span>
-            </div>
-            <div class="float-card float-card--2">
-              <span class="float-card__label">Build Price</span>
-              <span class="float-card__value">$1,500</span>
-            </div>
-            <div class="float-card float-card--3">
-              <span class="float-card__label">Retainer</span>
-              <span class="float-card__value">$400<span>/mo</span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MARQUEE TICKER -->
-    <div class="marquee-wrap" aria-hidden="true">
-      <div class="marquee-track">
-        <span class="marquee-item">QUIZ FUNNELS</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">LEAD CALCULATORS</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">AI AD VIDEOS</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">PROMPT ANALYZER</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">150+ AI TOOLS</span>
-        <span class="marquee-sep">·</span>
-        <!-- duplicate for seamless loop -->
-        <span class="marquee-item">QUIZ FUNNELS</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">LEAD CALCULATORS</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">AI AD VIDEOS</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">PROMPT ANALYZER</span>
-        <span class="marquee-sep">·</span>
-        <span class="marquee-item">150+ AI TOOLS</span>
-        <span class="marquee-sep">·</span>
-      </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 AI Earners. All rights reserved.</p>
     </div>
+  </div>
+</footer>
 
-    <!-- FRAMEWORK -->
-    <section class="framework section" id="framework">
-      <div class="container">
-        <div class="framework__header">
-          <span class="section-eyebrow">Why it works</span>
-          <h2 class="framework__headline">
-            AI Earners is built around<br>
-            <span class="caveat caveat--cyan">tools</span>
-            <span class="framework__plus">+</span>
-            <span class="caveat caveat--magenta">prompts</span>
-            <span class="framework__plus">+</span>
-            <span class="caveat caveat--amber">paid outcomes</span>
-          </h2>
-        </div>
-        <div class="framework__cards">
-          <div class="card card--glow-cyan">
-            <div class="card__icon">🧰</div>
-            <h3 class="card__title">AI Trenders Toolkit</h3>
-            <p class="card__body">150+ curated AI tools organized into Quick-Start Packs — no hunting, no wasted time. Just grab the pack for your niche and build.</p>
-          </div>
-          <div class="card card--glow-magenta">
-            <div class="card__icon">🔍</div>
-            <h3 class="card__title">Prompt Analyzer</h3>
-            <p class="card__body">Better prompts, better output, every single time. Our analyzer breaks down what makes a prompt work and helps you write ones that convert.</p>
-          </div>
-          <div class="card card--glow-amber">
-            <div class="card__icon">💰</div>
-            <h3 class="card__title">Paid Outcomes</h3>
-            <p class="card__body">We only teach assets businesses already pay for — quizzes, calculators, lead funnels, AI ad videos. Real niches, real money.</p>
-          </div>
-        </div>
-        <div class="framework__pill-block">
-          <p>
-            Most people trying to make money with AI go in circles because nobody tells them
-            <span class="pill pill--outline-cyan">what businesses actually pay for</span>.
-            It's not apps. It's not chatbots. It's
-            <span class="pill pill--magenta">marketing assets</span> —
-            the things that generate
-            <span class="pill pill--cyan">leads and sales</span>
-            for local businesses every single day.
-            <span class="caveat caveat--amber">That's the secret.</span>
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW IT WORKS -->
-    <section class="steps section" id="steps">
-      <div class="container">
-        <span class="section-eyebrow">How it works</span>
-        <h2 class="steps__headline">Four steps from zero to<br><span class="caveat caveat--cyan">paid monthly</span></h2>
-        <div class="steps__grid">
-          <div class="step">
-            <div class="step__num">01</div>
-            <h3 class="step__title">Pick a niche</h3>
-            <p class="step__body">Mortgage brokers, chiropractors, coaches, real estate — choose from proven local business niches that need marketing assets <em>now</em>.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">02</div>
-            <h3 class="step__title">Grab a pack</h3>
-            <p class="step__body">Select the right Quick-Start Pack from the AI Trenders Toolkit. Every tool you need, pre-curated and ready to go.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">03</div>
-            <h3 class="step__title">Build the asset</h3>
-            <p class="step__body">Use the Prompt Analyzer to get better outputs. Build a quiz funnel, lead calculator, or AI ad video in hours, not weeks.</p>
-          </div>
-          <div class="step">
-            <div class="step__num">04</div>
-            <h3 class="step__title">Get paid monthly</h3>
-            <p class="step__body">Charge <span class="pill pill--cyan">$500–$2,000</span> for the build plus <span class="pill pill--magenta">$300–$500/month</span> to maintain and optimize. Recurring revenue.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOOLKIT SHOWCASE -->
-    <section class="toolkit section" id="toolkit">
-      <div class="container">
-        <div class="toolkit__inner">
-          <div class="toolkit__left">
-            <span class="section-eyebrow">The AI Trenders Toolkit</span>
-            <h2 class="toolkit__headline">150+ tools.<br>Organised into<br><span class="caveat caveat--cyan">Quick-Start Packs</span></h2>
-            <p class="toolkit__sub">No more tab overload or tool paralysis. Every pack is curated for a specific outcome — content, growth, solo operations, or daily AI use. Pick one. Build something.</p>
-            <div class="toolkit__stats">
-              <div class="toolkit__stat"><span>150+</span> AI tools</div>
-              <div class="toolkit__stat"><span>4</span> Quick-Start Packs</div>
-              <div class="toolkit__stat"><span>1</span> Prompt Analyzer</div>
-            </div>
-            <a href="#join" class="btn btn--cyan">Get the full toolkit →</a>
-          </div>
-          <div class="toolkit__right">
-            <div class="pack-card">
-              <span class="pack-card__icon">🎬</span>
-              <div class="pack-card__info">
-                <h4>Content Studio Pack</h4>
-                <p>AI video, copywriting, and creative tools for building ad assets fast.</p>
-              </div>
-            </div>
-            <div class="pack-card">
-              <span class="pack-card__icon">🧑‍💻</span>
-              <div class="pack-card__info">
-                <h4>Solo Founder Pack</h4>
-                <p>Everything you need to run a one-person marketing agency with AI.</p>
-              </div>
-            </div>
-            <div class="pack-card">
-              <span class="pack-card__icon">📈</span>
-              <div class="pack-card__info">
-                <h4>Growth Marketer Pack</h4>
-                <p>Lead gen, funnel building, and conversion tools for scaling client results.</p>
-              </div>
-            </div>
-            <div class="pack-card">
-              <span class="pack-card__icon">⚡</span>
-              <div class="pack-card__info">
-                <h4>Daily Driver Pack</h4>
-                <p>The 10 AI tools you should be using every single day without exception.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EARNINGS -->
-    <section class="earnings section" id="earnings">
-      <div class="container">
-        <span class="section-eyebrow">What you can earn</span>
-        <h2 class="earnings__headline">Real money for<br><span class="caveat caveat--magenta">real marketing work</span></h2>
-        <div class="earnings__cards">
-          <div class="earnings__card earnings__card--featured">
-            <div class="earnings__badge">Per Build</div>
-            <div class="earnings__amount">$500–$2,000</div>
-            <div class="earnings__type">One-time project fee</div>
-            <ul class="earnings__list">
-              <li>Quiz funnels for lead capture</li>
-              <li>AI-powered calculators</li>
-              <li>Lead generation assets</li>
-              <li>AI ad videos for social &amp; paid</li>
-            </ul>
-            <a href="#join" class="btn btn--magenta">Start building →</a>
-          </div>
-          <div class="earnings__card">
-            <div class="earnings__badge earnings__badge--cyan">Monthly Retainer</div>
-            <div class="earnings__amount earnings__amount--cyan">$300–$500</div>
-            <div class="earnings__type">Per month, per client</div>
-            <ul class="earnings__list">
-              <li>Ongoing optimization</li>
-              <li>Monthly asset updates</li>
-              <li>Performance reporting</li>
-              <li>New asset builds</li>
-            </ul>
-            <a href="#join" class="btn btn--outline-cyan">Join to learn how →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FINAL CTA -->
-    <section class="final-cta section" id="join">
-      <div class="container">
-        <div class="final-cta__inner">
-          <span class="section-eyebrow">Free community · No credit card</span>
-          <h2 class="final-cta__headline">
-            Stop going in circles.<br>
-            <span class="caveat caveat--cyan">Join AI Earners free</span><br>
-            and get paid to build.
-          </h2>
-          <p class="final-cta__sub">Access the full AI Trenders Toolkit (150+ tools), the Prompt Analyzer, every Quick-Start Pack, and a community of people actually making money with AI.</p>
-          <a href="https://skool.com" class="btn btn--cyan btn--xl">Join AI Earners Free — No Credit Card →</a>
-          <p class="final-cta__note">Free forever on Skool · Join 1,000s of AI builders</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__brand">
-          <span class="logo-wordmark">
-            <span class="logo-ai">AI</span><span class="logo-earners"> Earners</span>
-          </span>
-          <span class="logo-toolkit">TOOLKIT<span class="logo-dot">.</span></span>
-          <p class="footer__tagline">Build AI marketing assets. Get paid monthly.</p>
-        </div>
-        <nav class="footer__links">
-          <a href="#framework">Why this works</a>
-          <a href="#steps">How it works</a>
-          <a href="#toolkit">Toolkit</a>
-          <a href="#earnings">Earnings</a>
-          <a href="#join">Join free</a>
-        </nav>
-      </div>
-      <div class="footer__bottom">
-        <p>&copy; 2026 AI Earners. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

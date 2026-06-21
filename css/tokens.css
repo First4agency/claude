@@ -1,55 +1,37 @@
 :root {
-  /* Colors */
-  --bg:          #07060c;
-  --bg-1:        #0e0d16;
-  --bg-2:        #13121e;
-  --surface:     #1a1828;
-  --border:      rgba(255, 255, 255, 0.08);
-  --border-mid:  rgba(255, 255, 255, 0.14);
+  --bg:           #07060c;
+  --bg-1:         #0b0a14;
+  --bg-2:         #0f0e1a;
+  --surface:      #141320;
+  --surface-2:    #1a1930;
+  --border:       rgba(255,255,255,0.06);
+  --border-mid:   rgba(255,255,255,0.11);
+  --border-hi:    rgba(255,255,255,0.18);
 
-  --cyan:        #00f0ff;
-  --cyan-dim:    rgba(0, 240, 255, 0.12);
-  --cyan-glow:   rgba(0, 240, 255, 0.35);
-  --magenta:     #ff2e7e;
-  --magenta-dim: rgba(255, 46, 126, 0.12);
-  --magenta-glow:rgba(255, 46, 126, 0.35);
-  --amber:       #ffb020;
-  --amber-dim:   rgba(255, 176, 32, 0.12);
-  --amber-glow:  rgba(255, 176, 32, 0.35);
+  --cyan:         #00f0ff;
+  --cyan-mid:     rgba(0,240,255,0.18);
+  --cyan-glow:    rgba(0,240,255,0.4);
+  --cyan-glow-sm: rgba(0,240,255,0.15);
+  --magenta:      #ff2e7e;
+  --magenta-mid:  rgba(255,46,126,0.18);
+  --magenta-glow: rgba(255,46,126,0.4);
+  --amber:        #ffb020;
+  --amber-mid:    rgba(255,176,32,0.18);
+  --amber-glow:   rgba(255,176,32,0.4);
 
-  --text:        #e8e6f0;
-  --text-muted:  #8a8699;
-  --text-faint:  #4a4760;
+  --text:         #f0eeff;
+  --text-2:       #b0adcc;
+  --text-3:       #6b6888;
+  --text-4:       #35334a;
 
-  /* Typography */
-  --font-body:   'Inter', system-ui, sans-serif;
-  --font-accent: 'Caveat', cursive;
+  --font:         'Inter', system-ui, sans-serif;
+  --font-accent:  'Caveat', cursive;
 
-  /* Spacing scale */
-  --space-1:  4px;
-  --space-2:  8px;
-  --space-3:  12px;
-  --space-4:  16px;
-  --space-5:  20px;
-  --space-6:  24px;
-  --space-8:  32px;
-  --space-10: 40px;
-  --space-12: 48px;
-  --space-16: 64px;
-  --space-20: 80px;
-  --space-24: 96px;
-  --space-32: 128px;
+  --r-sm:   6px;
+  --r-md:   14px;
+  --r-lg:   22px;
+  --r-xl:   32px;
+  --r-full: 9999px;
 
-  /* Radii */
-  --radius-sm:  6px;
-  --radius-md:  12px;
-  --radius-lg:  20px;
-  --radius-xl:  32px;
-  --radius-pill:9999px;
-
-  /* Transitions */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --t-fast:   150ms;
-  --t-base:   250ms;
-  --t-slow:   400ms;
+  --ease:   cubic-bezier(0.16, 1, 0.3, 1);
 }
