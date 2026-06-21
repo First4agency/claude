@@ -1,0 +1,55 @@
+.framework {
+  background: var(--bg);
+}
+
+.framework__header {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+.framework__header .section-eyebrow {
+  margin-bottom: var(--space-4);
+}
+
+.framework__headline {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+.framework__plus {
+  color: var(--text-faint);
+  font-weight: 400;
+  margin-inline: var(--space-2);
+}
+
+.framework__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  margin-bottom: var(--space-12);
+}
+
+.framework__pill-block {
+  background: var(--bg-1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8) var(--space-10);
+  text-align: center;
+}
+.framework__pill-block p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .framework__cards {
+    grid-template-columns: 1fr;
+  }
+  .framework__pill-block {
+    padding: var(--space-6);
+  }
+}

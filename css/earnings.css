@@ -1,0 +1,110 @@
+.earnings {
+  background: var(--bg-1);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.earnings__headline {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: var(--space-12);
+  margin-top: var(--space-3);
+}
+
+.earnings__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-6);
+  max-width: 780px;
+}
+
+.earnings__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-10) var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.earnings__card--featured {
+  border-color: var(--magenta);
+  box-shadow: 0 0 40px rgba(255,46,126,0.12), 0 0 0 1px rgba(255,46,126,0.15);
+  position: relative;
+  overflow: hidden;
+}
+.earnings__card--featured::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--magenta), rgba(255,46,126,0.3));
+}
+
+.earnings__badge {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--magenta);
+  background: var(--magenta-dim);
+  border: 1px solid rgba(255,46,126,0.3);
+  border-radius: var(--radius-pill);
+  padding: 4px 12px;
+  width: fit-content;
+}
+.earnings__badge--cyan {
+  color: var(--cyan);
+  background: var(--cyan-dim);
+  border-color: rgba(0,240,255,0.3);
+}
+
+.earnings__amount {
+  font-size: 2.6rem;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  color: var(--magenta);
+  line-height: 1;
+}
+.earnings__amount--cyan {
+  color: var(--cyan);
+}
+
+.earnings__type {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.earnings__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  flex: 1;
+}
+.earnings__list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-left: var(--space-5);
+  position: relative;
+}
+.earnings__list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--text-faint);
+}
+.earnings__card--featured .earnings__list li::before {
+  color: var(--magenta);
+}
+
+@media (max-width: 640px) {
+  .earnings__cards {
+    grid-template-columns: 1fr;
+  }
+}

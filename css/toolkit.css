@@ -1,0 +1,108 @@
+.toolkit {
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+}
+.toolkit::before {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(ellipse at center, rgba(0,240,255,0.05) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.toolkit__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+.toolkit__headline {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: var(--text);
+  margin-bottom: var(--space-5);
+  margin-top: var(--space-3);
+}
+.toolkit__sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+
+.toolkit__stats {
+  display: flex;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+.toolkit__stat {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4);
+}
+.toolkit__stat span {
+  color: var(--cyan);
+  font-weight: 800;
+}
+
+/* Pack cards */
+.toolkit__right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.pack-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-5) var(--space-6);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--t-base), box-shadow var(--t-base), transform var(--t-base);
+}
+.pack-card:hover {
+  border-color: var(--border-mid);
+  box-shadow: 0 4px 24px rgba(0,240,255,0.06);
+  transform: translateX(4px);
+}
+
+.pack-card__icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 2px;
+}
+.pack-card__info h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.pack-card__info p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .toolkit__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+}
